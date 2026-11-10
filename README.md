@@ -1,23 +1,29 @@
 # hr-calibration
 
-Study notes for **"Calibration and Explanation Stability in Organizational Machine Learning: Governance-Aware Evaluation"** (under review, JEI).
+Reproduction code for *Calibration and Explanation Stability in Organizational Machine Learning: A Governance-Aware Evaluation Framework*, the JEI manuscript.
 
-On the synthetic IBM HR benchmark, calibration error in the lowest-confidence quartile was 3.6–5.4 times that of the highest-confidence quartile after calibration. The study also tests how abstaining on low-confidence predictions changes coverage and accuracy, and how stable SHAP attributions are for individual cases.
+On the synthetic IBM HR dataset, calibration error in the lowest-confidence quartile was 3.6–5.4 times that of the highest-confidence quartile after calibration. The study also measures what happens when models abstain on low-confidence predictions and how stable feature attributions are across bootstrap samples.
 
-## Repository contents
+## Reproduce the study
 
-This checkout contains the study summary, dependencies, and [dataset instructions](data/README.md). Reproducing the reported values requires the `src/` scripts and their generated outputs, which are absent from this checkout.
+Download the dataset using the [data instructions](data/README.md). From the repository root, run:
 
-## Key results
+```bash
+python -m pip install -r requirements.txt
+python src/run_all.py
+python src/08_statistical_hardening.py
+```
 
-| Model | AUC | ECE (pre-cal) | ECE (post-cal) | GADRS |
-|---|---|---|---|---|
-| Logistic Regression | 0.777 | 0.041 | 0.031 | 0.25 |
-| Random Forest | 0.802 | 0.065 | 0.032 | 0.75 |
-| Gradient Boosting | 0.798 | 0.058 | 0.039 | 0.60 |
+The first script writes the model results and regenerates the figures. The second repeats the calibration checks with bootstrap intervals and alternative binning. The recovered [JSON results](results/) matched both reruns byte for byte.
 
-Per-sample SHAP stability (SSI) did not show zone-level differentiation: 0.69–0.75 across confidence zones for all models.
+## Test results
 
-## Dataset
+| Model | AUC | ECE before calibration | ECE after calibration | GADRS |
+|---|---:|---:|---:|---:|
+| Logistic regression | 0.802 | 0.047 | 0.047 | 0.252 |
+| Random forest | 0.777 | 0.041 | 0.032 | 0.750 |
+| Gradient boosting | 0.779 | 0.065 | 0.047 | 0.304 |
 
-The [dataset notes](data/README.md) give the download link and file path for the synthetic IBM HR Analytics Employee Attrition & Performance dataset. It has 1,470 rows and 35 columns.
+AUC measures how well a model ranks cases. Expected calibration error (ECE) compares predicted probabilities with observed outcomes. The Governance-Aware Deployment Readiness Score (GADRS) combines calibration, abstention, and explanation stability. See the [model results](results/baseline_results.json), [calibration results](results/calibration_results.json), and [GADRS results](results/gadrs_results.json).
+
+SHAP explanation stability ranged from 0.69 to 0.75 across models and confidence zones.

@@ -1,0 +1,116 @@
+{
+  "LR": {
+    "global_ece_ew": 0.14931,
+    "global_ece_ef": 0.15829,
+    "zone_hardening": [
+      {
+        "zone": 1,
+        "ece_ew": 0.22985,
+        "ece_ew_ci95_lo": 0.16351,
+        "ece_ew_ci95_hi": 0.32371,
+        "ece_ef": 0.22481,
+        "n_cases": 74
+      },
+      {
+        "zone": 2,
+        "ece_ew": 0.09685,
+        "ece_ew_ci95_lo": 0.04429,
+        "ece_ew_ci95_hi": 0.19927,
+        "ece_ef": 0.12317,
+        "n_cases": 73
+      },
+      {
+        "zone": 3,
+        "ece_ew": 0.14456,
+        "ece_ew_ci95_lo": 0.06103,
+        "ece_ew_ci95_hi": 0.22882,
+        "ece_ef": 0.11772,
+        "n_cases": 73
+      },
+      {
+        "zone": 4,
+        "ece_ew": 0.15581,
+        "ece_ew_ci95_lo": 0.07505,
+        "ece_ew_ci95_hi": 0.25036,
+        "ece_ef": 0.16058,
+        "n_cases": 74
+      }
+    ]
+  },
+  "RF": {
+    "global_ece_ew": 0.10696,
+    "global_ece_ef": 0.12397,
+    "zone_hardening": [
+      {
+        "zone": 1,
+        "ece_ew": 0.30763,
+        "ece_ew_ci95_lo": 0.19978,
+        "ece_ew_ci95_hi": 0.40598,
+        "ece_ef": 0.30763,
+        "n_cases": 46
+      },
+      {
+        "zone": 2,
+        "ece_ew": 0.00812,
+        "ece_ew_ci95_lo": 0.00577,
+        "ece_ew_ci95_hi": 0.10299,
+        "ece_ef": 0.0,
+        "n_cases": 72
+      },
+      {
+        "zone": 3,
+        "ece_ew": 0.09949,
+        "ece_ew_ci95_lo": 0.0102,
+        "ece_ew_ci95_hi": 0.18922,
+        "ece_ef": 0.0,
+        "n_cases": 56
+      },
+      {
+        "zone": 4,
+        "ece_ew": 0.09283,
+        "ece_ew_ci95_lo": 0.03224,
+        "ece_ew_ci95_hi": 0.15996,
+        "ece_ef": 0.05116,
+        "n_cases": 120
+      }
+    ]
+  },
+  "GB": {
+    "global_ece_ew": 0.12035,
+    "global_ece_ef": 0.11805,
+    "zone_hardening": [
+      {
+        "zone": 1,
+        "ece_ew": 0.19893,
+        "ece_ew_ci95_lo": 0.127,
+        "ece_ew_ci95_hi": 0.3014,
+        "ece_ef": 0.23301,
+        "n_cases": 74
+      },
+      {
+        "zone": 2,
+        "ece_ew": 0.09939,
+        "ece_ew_ci95_lo": 0.03375,
+        "ece_ew_ci95_hi": 0.19376,
+        "ece_ef": 0.11371,
+        "n_cases": 73
+      },
+      {
+        "zone": 3,
+        "ece_ew": 0.10256,
+        "ece_ew_ci95_lo": 0.02915,
+        "ece_ew_ci95_hi": 0.18519,
+        "ece_ef": 0.05512,
+        "n_cases": 73
+      },
+      {
+        "zone": 4,
+        "ece_ew": 0.07998,
+        "ece_ew_ci95_lo": 0.01256,
+        "ece_ew_ci95_hi": 0.16128,
+        "ece_ef": 0.08091,
+        "n_cases": 74
+      }
+    ]
+  }
+}

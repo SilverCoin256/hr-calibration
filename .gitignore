@@ -7,3 +7,5 @@ data/raw/*.csv
 results/*.json
 figures/*.png
 figures/*.pdf
+
+data/*.csv

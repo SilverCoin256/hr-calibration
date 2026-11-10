@@ -1,0 +1,162 @@
+{
+  "sub_scores": {
+    "LR": {
+      "ece_calibrated": 0.04675776336704454,
+      "aurc_delta": 0.0775541942029801,
+      "lowconf_ece": 0.11413230750457652,
+      "ssi_lowconf": 0.693985512793093
+    },
+    "RF": {
+      "ece_calibrated": 0.031554767034290554,
+      "aurc_delta": 0.06964318541775433,
+      "lowconf_ece": 0.09023464458247063,
+      "ssi_lowconf": 0.7470565597667637
+    },
+    "GB": {
+      "ece_calibrated": 0.047292565306608185,
+      "aurc_delta": 0.09203470989899146,
+      "lowconf_ece": 0.1519308407983162,
+      "ssi_lowconf": 0.7082180477195767
+    }
+  },
+  "gadrs": {
+    "primary": {
+      "LR": {
+        "gadrs_risk": 0.7483155163129931,
+        "gadrs_readiness": 0.2516844836870069,
+        "ece_norm": 0.9660179950009687,
+        "aurc_norm": 0.35330371506659863,
+        "lowconf_ece_norm": 0.3873441863174087,
+        "ssi_norm": 0.0
+      },
+      "RF": {
+        "gadrs_risk": 0.25,
+        "gadrs_readiness": 0.75,
+        "ece_norm": 0.0,
+        "aurc_norm": 0.0,
+        "lowconf_ece_norm": 0.0,
+        "ssi_norm": 1.0
+      },
+      "GB": {
+        "gadrs_risk": 0.6963642202742119,
+        "gadrs_readiness": 0.30363577972578815,
+        "ece_norm": 1.0,
+        "aurc_norm": 1.0,
+        "lowconf_ece_norm": 1.0,
+        "ssi_norm": 0.2681788986289409
+      }
+    },
+    "equal_weights": {
+      "LR": {
+        "gadrs_risk": 0.7500146165629447,
+        "gadrs_readiness": 0.24998538343705534,
+        "ece_norm": 0.9660179950009687,
+        "aurc_norm": 0.35330371506659863,
+        "lowconf_ece_norm": 0.3873441863174087,
+        "ssi_norm": 0.0
+      },
+      "RF": {
+        "gadrs_risk": 0.25,
+        "gadrs_readiness": 0.75,
+        "ece_norm": 0.0,
+        "aurc_norm": 0.0,
+        "lowconf_ece_norm": 0.0,
+        "ssi_norm": 1.0
+      },
+      "GB": {
+        "gadrs_risk": 0.6829552753427648,
+        "gadrs_readiness": 0.3170447246572352,
+        "ece_norm": 1.0,
+        "aurc_norm": 1.0,
+        "lowconf_ece_norm": 1.0,
+        "ssi_norm": 0.2681788986289409
+      }
+    },
+    "ece_heavy": {
+      "LR": {
+        "gadrs_risk": 0.8187958776131221,
+        "gadrs_readiness": 0.18120412238687789,
+        "ece_norm": 0.9660179950009687,
+        "aurc_norm": 0.35330371506659863,
+        "lowconf_ece_norm": 0.3873441863174087,
+        "ssi_norm": 0.0
+      },
+      "RF": {
+        "gadrs_risk": 0.17,
+        "gadrs_readiness": 0.83,
+        "ece_norm": 0.0,
+        "aurc_norm": 0.0,
+        "lowconf_ece_norm": 0.0,
+        "ssi_norm": 1.0
+      },
+      "GB": {
+        "gadrs_risk": 0.7870913762193695,
+        "gadrs_readiness": 0.21290862378063047,
+        "ece_norm": 1.0,
+        "aurc_norm": 1.0,
+        "lowconf_ece_norm": 1.0,
+        "ssi_norm": 0.2681788986289409
+      }
+    }
+  },
+  "covariate_shift": {
+    "LR": {
+      "ece_calibrated_shifted": 0.0724187956156325,
+      "aurc_delta_shifted": 0.061217656049014954,
+      "perturbed_features": [
+        "OverTime",
+        "YearsWithCurrManager",
+        "EnvironmentSatisfaction"
+      ]
+    },
+    "RF": {
+      "ece_calibrated_shifted": 0.025532499950873526,
+      "aurc_delta_shifted": 0.07086949684041385,
+      "perturbed_features": [
+        "OverTime",
+        "Age",
+        "YearsWithCurrManager"
+      ]
+    },
+    "GB": {
+      "ece_calibrated_shifted": 0.049281748448412564,
+      "aurc_delta_shifted": 0.08602358378429235,
+      "perturbed_features": [
+        "OverTime",
+        "StockOptionLevel",
+        "Age"
+      ]
+    }
+  },
+  "gadrs_shifted": {
+    "LR": {
+      "gadrs_risk": 0.8468360465793523,
+      "gadrs_readiness": 0.1531639534206477,
+      "ece_norm": 1.0,
+      "aurc_norm": 0.0,
+      "lowconf_ece_norm": 0.3873441863174087,
+      "ssi_norm": 0.0
+    },
+    "RF": {
+      "gadrs_risk": 0.15272646830224507,
+      "gadrs_readiness": 0.8472735316977549,
+      "ece_norm": 0.0,
+      "aurc_norm": 0.3890941267910198,
+      "lowconf_ece_norm": 0.0,
+      "ssi_norm": 1.0
+    },
+    "GB": {
+      "gadrs_risk": 0.548322792565878,
+      "gadrs_readiness": 0.451677207434122,
+      "ece_norm": 0.506528574305554,
+      "aurc_norm": 1.0,
+      "lowconf_ece_norm": 1.0,
+      "ssi_norm": 0.2681788986289409
+    }
+  },
+  "delta_gadrs_risk": {
+    "LR": 0.09852053026635921,
+    "RF": -0.09727353169775493,
+    "GB": -0.14804142770833384
+  }
+}

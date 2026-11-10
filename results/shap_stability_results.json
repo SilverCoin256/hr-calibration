@@ -1,0 +1,104 @@
+{
+  "LR": {
+    "base_top5_features": [
+      "OverTime",
+      "YearsWithCurrManager",
+      "EnvironmentSatisfaction",
+      "NumCompaniesWorked",
+      "TotalWorkingYears"
+    ],
+    "base_importance_scores": [
+      0.7202382522880183,
+      0.46634816558632824,
+      0.46278018958821016,
+      0.41348268228585106,
+      0.40028690078015483
+    ],
+    "zone_d": {
+      "ssi_mean": 0.7096909564708398,
+      "ssi_std": 0.03133523261577696,
+      "n_bootstrap": 50,
+      "n_samples_evaluated": 74
+    },
+    "zone_a": {
+      "ssi_mean": 0.693985512793093,
+      "ssi_std": 0.028910187157263213,
+      "n_bootstrap": 50,
+      "n_samples_evaluated": 74
+    },
+    "ssi_zone_d": 0.7096909564708398,
+    "ssi_zone_a": 0.693985512793093,
+    "ssi_zone_d_std": 0.03133523261577696,
+    "ssi_zone_a_std": 0.028910187157263213,
+    "zone_a_n": 74,
+    "zone_d_n": 74
+  },
+  "RF": {
+    "base_top5_features": [
+      "OverTime",
+      "Age",
+      "YearsWithCurrManager",
+      "YearsAtCompany",
+      "MonthlyIncome"
+    ],
+    "base_importance_scores": [
+      0.03405444650127946,
+      0.021365367877086414,
+      0.01994991346101095,
+      0.019731698775988103,
+      0.0180025979943587
+    ],
+    "zone_d": {
+      "ssi_mean": 0.7285117083159794,
+      "ssi_std": 0.035438699735191384,
+      "n_bootstrap": 50,
+      "n_samples_evaluated": 120
+    },
+    "zone_a": {
+      "ssi_mean": 0.7470565597667637,
+      "ssi_std": 0.03337586653659191,
+      "n_bootstrap": 50,
+      "n_samples_evaluated": 46
+    },
+    "ssi_zone_d": 0.7285117083159794,
+    "ssi_zone_a": 0.7470565597667637,
+    "ssi_zone_d_std": 0.035438699735191384,
+    "ssi_zone_a_std": 0.03337586653659191,
+    "zone_a_n": 46,
+    "zone_d_n": 120
+  },
+  "GB": {
+    "base_top5_features": [
+      "OverTime",
+      "StockOptionLevel",
+      "Age",
+      "MonthlyIncome",
+      "NumCompaniesWorked"
+    ],
+    "base_importance_scores": [
+      0.5323921429195855,
+      0.3475824384163325,
+      0.34309944701545625,
+      0.3170748506954236,
+      0.27840609784946335
+    ],
+    "zone_d": {
+      "ssi_mean": 0.7078368390332721,
+      "ssi_std": 0.01719635442157689,
+      "n_bootstrap": 50,
+      "n_samples_evaluated": 74
+    },
+    "zone_a": {
+      "ssi_mean": 0.7082180477195767,
+      "ssi_std": 0.021639041329672412,
+      "n_bootstrap": 50,
+      "n_samples_evaluated": 74
+    },
+    "ssi_zone_d": 0.7078368390332721,
+    "ssi_zone_a": 0.7082180477195767,
+    "ssi_zone_d_std": 0.01719635442157689,
+    "ssi_zone_a_std": 0.021639041329672412,
+    "zone_a_n": 74,
+    "zone_d_n": 74
+  }
+}
